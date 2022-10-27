@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Overpass&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Interactive Rating Component</title>
+</head>
+<body>
+    <div class="package">
+        <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" class="img1" style="width: 40px;" alt="Star-Image"/>
+        <p class="para1">How did we do?</p>
+        <p class="para2">Please let us know how we did with your support <br>request. All feedback is appreciated to help us <br>
+            improve our offering!</p>
+        <span class="buttons">
+            <button class="button1">1</button>
+            <button class="button2">2</button>
+            <button class="button3">3</button>
+            <button class="button4">4</button>
+            <button class="button5">5</button>
+        </span>
+        <button type="button" class="button" onclick="showThanku();">Submit</button>
+
+    </div>
+    <div class="thankubox" id="box">
+        <img src="https://i.ibb.co/1L9Szqm/imageedit-34-2320263168.png" class="img2" style="height: 90px;" alt="imageedit-34-2320263168">        
+        <p class="par1" style="border: 0px solid">You selected 4 out of 5</p>
+        <p class="par2">Thank you!</p>
+        <p class="par3">We appreciate you taking the time to give a rating, <br>if you ever need more support, don't hesitate to <br>get in touch!</p>
+    </div>
+    <script>
+        var box = document.getElementById("box");
+
+         function showThanku(){
+            if(box.style.visibility !== "hidden"){
+                box.style.visibility = "hidden";
+            }else{
+                box.style.visibility = "visible";
+            }
+
+            box.style.visibility === false;
+            return true;
+         }
+    </script>
+</body>
+</html>
