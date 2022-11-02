@@ -9,281 +9,167 @@ html{
 }
 
 body{
-    width: 100%;
-    height: 100px;
+    font-family: 'Overpass', sans-serif;
+    font-size: 15px;
     background-color: hsl(216, 12%, 8%);
-    overflow: hidden;
+    margin: 1.5rem;
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
 }
 
 .package{
-    margin: 66px auto;
-    background-color: hsl(213, 19%, 18%);
-    width: 325px;
-    height: 320px;
-    position: relative;
-    border-radius: 25px;
-    top: 70px;
+    
 }
 
-.img1{
+.package, .thankubox{
+    background-color: hsl(213, 19%, 18%);
+    padding: 1.5rem;
+    border-radius: 0.625rem;
+    display: flex;
+    flex-direction: column;
+
+  }
+
+.package img{
+    border: none;
+    border-radius: 50%;
+    background-color: hsla(215, 18%, 28%, 0.434);
+    padding: 0.5rem;
+    margin: 8rem 26rem;
+
     position: absolute;
     top: 30px;
     left: 30px;
-    border: 1px solid hsl(213, 19%, 18%);
-    padding: 12px;
-    border-radius: 50%;
-    background-color: hsla(215, 18%, 28%, 0.434);
 }
 
-.para1{
-    position: absolute;
+.package h1{
+    color: hsl(0, 0%, 100%);
+    margin: 4rem .5rem 1rem;
+
+
     top: 90px;
     left: 30px;
-    color: hsl(0, 0%, 100%);
     font-size: 18px;
     font-weight: 600;
 }
 
-.para2{
-    position: absolute;
-    top: 125px;
-    left: 30px;
+.package p{
     color: hsl(217, 12%, 63%);
-    font-size: 13px;
+    margin: 0.8rem .5rem 1rem;
+    
 }
 
-.para3{
-    position: absolute;
-    top: 205px;
-    left: 30px;
-    color: hsl(217, 12%, 63%);
+.package ul{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.button1{
-    position: absolute;
-    top: 195px;
-    left: 30px;
-    color: hsl(217, 12%, 63%);
-    border: 1px solid hsl(213, 19%, 18%);
-    padding: 12px 17px;
+.package ul li button{
+    width: 3rem;
+    height: 3rem;
+    border: none;
     border-radius: 50%;
-    background-color: hsla(216, 17%, 32%, 0.322); 
-    box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.946);
+    background-color: hsl(213, 20%, 22%);
+    color: #fff;
+    padding: 0.2rem;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
-.button1:focus{
-    background-color: hsl(217, 12%, 63%);
-    color: hsl(0, 0%, 100%);
-}
-
-.button1:hover{
+.package ul li button:hover{
     background-color: hsl(25, 97%, 53%);
-    color: hsl(0, 0%, 100%);
-    cursor: pointer;
 }
 
-.button1:active{
-    background-color: hsl(217, 32%, 55%);
-    color: hsl(0, 0%, 100%);
-    cursor: pointer;
-    box-shadow: none;
-}
-
-.button2{
-    position: absolute;
-    top: 195px;
-    left: 85px;
-    color: hsl(217, 12%, 63%);
-    border: 1px solid hsl(213, 19%, 18%);
-    padding: 12px 17px;
-    border-radius: 50%;
-    background-color: hsla(216, 17%, 32%, 0.322); 
-    box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.946);
-}
-
-.button2:focus{
+.package ul li button:focus{
     background-color: hsl(217, 12%, 63%);
-    color: hsl(0, 0%, 100%);
 }
 
-.button2:hover{
+.btn-submit{
     background-color: hsl(25, 97%, 53%);
-    color: hsl(0, 0%, 100%);
-    cursor: pointer;
-}
-
-.button2:active{
-    background-color: hsl(217, 32%, 55%);
-    color: hsl(0, 0%, 100%);
-    cursor: pointer;
-    box-shadow: none;
-}
-
-.button3{
-    position: absolute;
-    top: 195px;
-    left: 140px;
-    color: hsl(217, 12%, 63%);
-    border: 1px solid hsl(213, 19%, 18%);
-    padding: 12px 17px;
-    border-radius: 50%;
-    background-color: hsla(216, 17%, 32%, 0.322); 
-    box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.946);
-}
-
-.button3:focus{
-    background-color: hsl(217, 12%, 63%);
-    color: hsl(0, 0%, 100%);
-}
-
-.button3:hover{
-    background-color: hsl(25, 97%, 53%);
-    color: hsl(0, 0%, 100%);
-    cursor: pointer;
-}
-
-.button3:active{
-    background-color: hsl(217, 32%, 55%);
-    color: hsl(0, 0%, 100%);
-    cursor: pointer;
-    box-shadow: none;
-}
-
-.button4{
-    position: absolute;
-    top: 195px;
-    left: 195px;
-    color: hsl(217, 12%, 63%);
-    border: 1px solid hsl(213, 19%, 18%);
-    padding: 12px 17px;
-    border-radius: 50%;
-    background-color: hsla(216, 17%, 32%, 0.322); 
-    box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.946);
-}
-
-.button4:focus{
-    background-color: hsl(217, 12%, 63%);
-    color: hsl(0, 0%, 100%);
-}
-
-.button4:hover{
-    background-color: hsl(25, 97%, 53%);
-    color: hsl(0, 0%, 100%);
-    cursor: pointer;
-}
-
-.button4:active{
-    background-color: hsl(217, 32%, 55%);
-    color: hsl(0, 0%, 100%);
-    cursor: pointer;
-    box-shadow: none;
-}
-
-.button5{
-    position: absolute;
-    top: 195px;
-    left: 250px;
-    color: hsl(217, 12%, 63%);
-    border: 1px solid hsl(213, 19%, 18%);
-    padding: 12px 17px;
-    border-radius: 50%;
-    background-color: hsla(216, 17%, 32%, 0.322); 
-    box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.946);
-}
-
-.button5:focus{
-    background-color: hsl(217, 12%, 63%);
-    color: hsl(0, 0%, 100%);
-}
-
-.button5:hover{
-    background-color: hsl(25, 97%, 53%);
-    color: hsl(0, 0%, 100%);
-    cursor: pointer;
-}
-
-.button5:active{
-    background-color: hsl(217, 32%, 55%);
-    color: hsl(0, 0%, 100%);
-    cursor: pointer;
-    box-shadow: none;
-}
-
-.button{
-    position: absolute;
-    top: 260px;
-    left: 30px;
-    padding: 8px 110px;
-    color: hsl(0, 0%, 100%);
-    border: 0px;
+    color: #fff;
+    width: 100%;
+    padding: 0.5rem 0 0.4rem;
+    margin-top: 1rem;
+    border: none;
+    border-radius: 30px;
     text-transform: uppercase;
-    font-weight: 600;
-    border-radius: 16px;
-    background-color: hsl(25, 97%, 53%);
+    letter-spacing: 0.1rem;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
-.button:hover{
-    background-color: hsl(0, 0%, 100%);
+.btn-submit:hover{
+    background-color: #fff;
     color: hsl(25, 97%, 53%);
-    cursor: pointer;
 }
 
-.button:active{
-    background-color: hsl(217, 32%, 55%);
-    color: hsl(0, 0%, 100%);
-    cursor: pointer;
-    box-shadow: none;
+
+ul{
+    list-style-type: none;
+}
+
+button{
+    font-family: inherit;
 }
 
 .thankubox{
-    visibility: hidden;
-    position: relative;
-    width: 315px;
-    height: 335px;
-    position: relative;
-    border-radius: 25px;
-    bottom: 310px;
-    left: 40px;
-    background-color: hsla(210, 26%, 16%, 0.967);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-.img2{
-    position: absolute;
-    top: 30px;
-    left: 75px;
+.thankubox img{
+    margin: 1rem;
 }
 
-.par1{
-    position: absolute;
-    top: 150px;
-    left: 70px;
-    padding: 4px 18px;
+.thankubox p.gray{
+    background-color: hsl(212, 18%, 20%);
+    border-radius: 30px;
     color: hsl(25, 97%, 53%);
-    font-size: 12px;
-    opacity: 0.8;
-    border-radius: 18px;
-    background-color: hsla(210, 20%, 18%, 0.921);
+    padding: 0.2rem 1rem;
+    font-size: 0.9rem;
+    margin: 0.8rem;
 }
 
-.par2{
-    position: absolute;
-    top: 200px;
-    left: 95px;
-    color: hsl(0, 0%, 100%);
-    font-size: 24px;
+.thankubox h2{
+    color: #fff;
+    margin: 1rem;
+
 }
 
-.par3{
-    position: absolute;
-    top: 240px;
-    left: 22px;
+.thankubox p{
     text-align: center;
-    color: hsl(0, 0%, 100%);
-    opacity: 0.5;
-    font-size: 12px;
-    line-height: 1.6;
+    color: hsl(217, 12%, 63%)
+
 }
 
+.hidden{
+    display: none;
+}
+
+
+
+
+
+
+.attribution{
+    font-size: 14px;
+    text-align: center;
+    color: #fff;
+    margin-top: 2rem;
+}
+
+.attribution a{
+    color: hsl(228, 45%, 44%);
+}
 
 
 
@@ -293,43 +179,6 @@ body{
 @media screen 
   and (min-width: 375px) 
   and (max-width: 450px){
-    .package{
-        width: 295px;
-        height: 330px;
-    }
-    img{
-        left: 15px;
-    }
-    .para1{
-        left: 15px;
-    }
-    .para2{
-        left: 15px;
-    }
-    .para3{
-        left: 15px;
-    }
-    .button{
-        left: 13px;
-    }
-     br{
-            display: none;
-        }
-    .one{
-        padding: 10px 16px;
-    }
-    .two{
-        padding: 10px 16px;
-    }
-    .one{
-        padding: 10px 16px;
-    }
-    .one{
-        padding: 10px 16px;
-    }
-    .one{
-        padding: 10px 15px;
-    }
 }
 
 /* ----------- 450 - 650px ----------- */

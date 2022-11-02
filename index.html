@@ -9,39 +9,58 @@
 </head>
 <body>
     <div class="package">
-        <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" class="img1" style="width: 40px;" alt="Star-Image"/>
-        <p class="para1">How did we do?</p>
-        <p class="para2">Please let us know how we did with your support <br>request. All feedback is appreciated to help us <br>
+        <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" style="width: 40px;" alt="Star-Image"/>
+        <h1 class="para1">How did we do?</h1>
+        <p>Please let us know how we did with your support <br>request. All feedback is appreciated to help us <br>
             improve our offering!</p>
-        <span class="buttons">
-            <button class="button1">1</button>
-            <button class="button2">2</button>
-            <button class="button3">3</button>
-            <button class="button4">4</button>
-            <button class="button5">5</button>
-        </span>
-        <button type="button" class="button" onclick="showThanku();">Submit</button>
+        <ul>
+            <li><button class="btn">1</button></li>
+            <li><button class="btn">2</button></li>
+            <li><button class="btn">3</button></li>
+            <li><button class="btn">4</button></li>
+            <li><button class="btn">5</button></li>
+        </ul>
+        <button type="button" class="btn-submit" id="submit">Submit</button>
 
     </div>
-    <div class="thankubox" id="box">
-        <img src="https://i.ibb.co/1L9Szqm/imageedit-34-2320263168.png" class="img2" style="height: 90px;" alt="imageedit-34-2320263168">        
-        <p class="par1" style="border: 0px solid">You selected 4 out of 5</p>
-        <p class="par2">Thank you!</p>
-        <p class="par3">We appreciate you taking the time to give a rating, <br>if you ever need more support, don't hesitate to <br>get in touch!</p>
+    <div class="thankubox hidden" class="box">
+        <img src="https://i.ibb.co/JHt8pgv/imageedit-34-2320263168.png" style="height: 60px;" alt="Illustration Thank You">        
+        <p class="gray" id="par1" style="border: 0px solid">You selected <span id="rating"></span> out of 5</p>
+        <h2>Thank you!</h2>
+        <p>We appreciate you taking the time to give a rating, <br>if you ever need more support, don't hesitate to <br>get in touch!</p>
+        <button class="btn-submit" id="rate-again">Rate Again</button>
     </div>
     <script>
-        var box = document.getElementById("box");
 
-         function showThanku(){
-            if(box.style.visibility !== "hidden"){
-                box.style.visibility = "hidden";
-            }else{
-                box.style.visibility = "visible";
-            }
+        const package = document.querySelector(".package");
+        const thankuBox = document.querySelector(".thankubox");
+        const submitButton = document.getElementById("submit");
+        const rateAgain = document.getElementById("rate-again");
+        const rating = document.getElementById("rating");
+        const rates = document.querySelectorAll(".btn");
 
-            box.style.visibility === false;
-            return true;
-         }
+
+        submitButton.addEventListener("click", () =>{
+            thankuBox.classList.remove("hidden");
+            package.style.display = "none";
+        })
+
+        rateAgain.addEventListener("click", () =>{
+            thankuBox.classList.add("hidden");
+            package.style.display = "block";
+        })
+
+        rates.forEach((rate) => {
+            rate.addEventListener("click", () => {
+                rating.innerHTML = rate.innerHTML;
+            })
+        })
+
     </script>
+
+    <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io/profile/dquindara8" target="_blank">Frontend Mentor</a>
+        Coded by <a href="#">Quindara Trim-Corbin</a>
+    </div>
 </body>
 </html>
