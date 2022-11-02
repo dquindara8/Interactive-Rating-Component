@@ -13,7 +13,10 @@ This is a solution to the [Interactive rating component challenge on Frontend Me
 
 ### Screenshot
 
-![Interactive Rating Component]()
+![Interactive Rating Component 1](https://user-images.githubusercontent.com/108308166/199384805-8e3e8755-b8ec-4238-b70a-3d94ded6913f.jpg)
+
+![Interactive Rating Component 2](https://user-images.githubusercontent.com/108308166/199385027-fe81a520-b300-48be-b5cf-6d84345b10bb.jpg)
+
 
 
 ### Links
