@@ -18,22 +18,21 @@ This is a solution to the [Interactive rating component challenge on Frontend Me
 ![Interactive Rating Component 2](https://user-images.githubusercontent.com/108308166/199385027-fe81a520-b300-48be-b5cf-6d84345b10bb.jpg)
 
 
-
 ### Links
 
-- [Solution URL](https://github.com/dquindara8/Single-Price-Grid)
-- [Live site URL](https://dquindara8.github.io/Single-Price-Grid/)
+- [Solution URL](https://github.com/dquindara8/Interactive-Rating-Component)
+- [Live site URL](https://dquindara8.github.io/Interactive-Rating-Component/)
 
 ### Built with
 
 - HTML5 markup
 - CSS custom properties
-- CSS Grid
+- Flexbox
 
 
 ### Continued development
 
-I want to continue learning to apply @media rules to make webpages more responsive on different screen sizes and also to center the item in webpage correctly with appropiate properties..
+I want to continue learning to apply @media rules to make webpages more responsive on different screen sizes and also to get the image to be at a fixed position whiles being responsive.
 
 ## Author
 
