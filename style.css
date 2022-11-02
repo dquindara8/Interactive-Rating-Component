@@ -23,7 +23,7 @@ body{
 }
 
 .package{
-    
+    position: relative;
 }
 
 .package, .thankubox{
@@ -39,11 +39,11 @@ body{
     border: none;
     border-radius: 50%;
     background-color: hsla(215, 18%, 28%, 0.434);
-    padding: 0.5rem;
-    max-height: 6vh;
-    margin: auto;
-    top: 10rem;
+    padding: 2.3%;
+    max-height: 11%;
     position: absolute;
+    left: 6%;
+    top: 10%;
 }
 
 .package h1{
@@ -189,6 +189,7 @@ button{
   and (max-width: 650px){
     .package img{
         margin: auto;
+       
     }
 }
 
